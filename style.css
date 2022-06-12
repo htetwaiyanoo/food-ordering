@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Mukta&family=Secular+One&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#header{
+    width: 100%;
+    height: 90px;
+    background-color: #fff;
+    position: relative;
+    /* font-family: 'Twinkle Star', cursive; */
+    font-family: 'Mukta', sans-serif;
+}
+.logo{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 60px;
+    padding-top: 10px;
+}
+.cart{
+   margin-left: 60rem;
+}
+
+
+.menu ul{
+    display: flex;
+   padding-left: 15rem;
+    padding-top:10px;
+    font-size: 23px;
+    color: #c49d68;
+    list-style-type: none;
+}
+
+:is(.menu) ul > li{
+    margin: 20px;
+}
+
+.shop{
+    position: absolute;
+    margin-left: 80rem;
+    margin-top: -40px;
+}
+
+#hero-banner{
+    height:500px;   
+    background-image: linear-gradient(to right,rgba(209, 145, 60,.8),rgba(234, 186, 123, 0.8)),url(./photo/4477349.jpg);
+    background-image: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 20rem;
+    font-family: 'Mukta', sans-serif;
+}
+
+#searchbox{
+    padding: 10px 50px;
+    border: none;
+    border-radius: 30px;
+    font-size: 20px;
+   width: 100%;
+   outline: none;
+   font-family: 'Mukta', sans-serif;
+};
+
+#searchbox:focus, #searchbox:focus-visible{
+    box-shadow: 1px 1px 10px #ccc; 
+}
+
+.btn{
+    border: 0;
+    border-radius: 100%;
+    height: 50px;
+    width: 65px;
+    margin: 10px;
+    background-color: #fff;
+    font-family: 'Mukta', sans-serif;
+}
+
+#recepies h1{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    color: #c49d68;
+    margin-top: 20px;
+    font-family: 'Mukta', sans-serif;
+}
+
+.collection{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
+    font-family: 'Mukta', sans-serif;
+}
+
+.box{position: relative;
+    
+    margin-top: 30px;
+    width: 16rem;
+    height: 19rem;
+    background-color: #ccc;
+    border-radius: 25px;
+    background-image: url(./photo/cup.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(196, 157, 104,.8);
+    border-radius: 25px;
+    opacity: 0;
+    z-index: -1;
+}
+.box:hover .overlay {
+    opacity: 1;
+    z-index: 1;
+}
+.overlay p{
+    font-size: 40px;
+    font-weight: bolder;
+    color: #fff;
+    margin-top: 6rem;
+}
+
+.overlay span{
+    font-size: 20px;
+    color: #fff;
+    margin: 10px;
+}
+
+.overlay button{
+    width: 4rem;
+    height: 2rem;
+    color: #000;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 1px 1px 10px #ccc;
+}
+.dop-item{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.dop{
+    width: 20px;
+    height: 20px;
+    border-radius: 30px;
+    background-color: #c49d68;
+    margin: 10px;
+    
+}
+
